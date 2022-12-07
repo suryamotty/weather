@@ -1,7 +1,7 @@
 function search(){
     let place = placeVal.value;
 //  console.log(place);
-fetch(`http://api.openweathermap.org/data/2.5/weather?q=${place}&units=metric&APPID=8ac5c4d57ba6a4b3dfcf622700447b1e`)
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${place}&units=metric&APPID=8ac5c4d57ba6a4b3dfcf622700447b1e`)
 .then((result)=>{
     result.json()
     .then((data)=>{
